@@ -1,0 +1,128 @@
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 10000000;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #eeeeee;
+  overflow: hidden;
+  width: 0;
+  height: 0vh;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#pre-loader {
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee;
+  position: fixed;
+  z-index: 100000;
+  display: grid;
+  place-content: center;
+}
+#pre-loader-before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  place-content: center;
+}
+#pre-loader-before h1 {
+  font-size: 22vw;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace.pace-inactive .pace-progress {
+  display: none;
+}
+
+.pace .pace-progress {
+  position: fixed;
+  z-index: 2000;
+  left: 3%;
+  bottom: 14%;
+  height: 0vw;
+  width: 0vw;
+}
+
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  content: attr(data-progress-text);
+  font-weight: bold;
+  font-size: 5vw;
+  line-height: 1;
+  text-align: right;
+  color: hsl(0, 0%, 7%);
+  font-family: sans-serif;
+}
+
+#pre-loader #preload-img {
+  width: 45vw;
+  z-index: 2;
+  margin-bottom: 20vh;
+}
+
+#pre-loader-animation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+}
+
+.pre-loader-animation-tile {
+  width: 20%;
+  height: 100%;
+  background: #eeeeee;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .pace .pace-progress:after {
+    font-size: 12vw;
+  }
+
+  .pace .pace-progress {
+    left: 4%;
+    bottom: 10%;
+  }
+
+  #pre-loader #preload-img {
+    width: 90vw;
+    margin-left: 13vw;
+  }
+
+  #pre-loader-before h1 {
+    font-size: 35vw;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+#preload-svg {
+  stroke-dasharray: 2998.25244140625;
+  stroke-dashoffset: 2998.25244140625;
+  animation: preload-svg 4s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes preload-svg {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

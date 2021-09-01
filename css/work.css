@@ -1,0 +1,114 @@
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: unset;
+  background: #fff;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #050505 !important;
+  /* border-radius: 20px; */
+  /* border: 1px solid transparent; */
+  background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#img-section {
+  width: 100%;
+  height: 70vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(https://res.cloudinary.com/thekashyapsoni/image/upload/v1629488138/Acting/2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.32;
+}
+
+#img-section h1 {
+  font-size: 5.8vw;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+}
+
+#links {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10vh 5vw;
+  width: 100vw;
+  grid-row-gap: 2%;
+  grid-column-gap: 3%;
+  margin-bottom: 5vh;
+}
+
+.yt-link {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+#gotoTop {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  #img-section h1 {
+    font-size: 9vw;
+    line-height: 13vw;
+  }
+
+  #links {
+    grid-template-rows: 1fr;
+    grid-template-columns: inherit;
+    padding: 10vh 7vw;
+    grid-row-gap: 1%;
+    grid-column-gap: 0;
+  }
+
+  #footer {
+    display: none;
+  }
+}
