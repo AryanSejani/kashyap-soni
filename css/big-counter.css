@@ -73,9 +73,9 @@
 }
 
 #pre-loader #preload-img {
-  width: 45vw;
+  width: 42vw;
   z-index: 2;
-  margin-bottom: 20vh;
+  margin-top: 5vh;
 }
 
 #pre-loader-animation {
@@ -115,8 +115,8 @@
 }
 
 #preload-svg {
-  stroke-dasharray: 2998.25244140625;
-  stroke-dashoffset: 2998.25244140625;
+  stroke-dasharray: 4629.67431640625;
+  stroke-dashoffset: 4629.67431640625;
   animation: preload-svg 4s ease;
   animation-fill-mode: forwards;
 }
