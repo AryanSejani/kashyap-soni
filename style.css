@@ -17,9 +17,9 @@ html{
 
 .main-ks-logo{
   position: fixed;
-    top: 35px;
+    top: 30px;
     left: 30px;
-    width: 40px;
+    width: 75px;
     height: 40px;
     display: flex;
     align-items: center;
