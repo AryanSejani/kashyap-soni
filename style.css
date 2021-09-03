@@ -26,10 +26,10 @@ html{
     justify-content: center;
     color: #126e82 !important;
 }
-.main-ks-logo h2{
+.main-ks-logo h1{
     color: #126e82 !important;
 }
-.main-ks-logo:hover h2{
+.main-ks-logo:hover h1{
     color: #eee !important;
 }
 
